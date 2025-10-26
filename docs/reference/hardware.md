@@ -1,0 +1,2 @@
+# Hardware inventory
+Coming soon.
