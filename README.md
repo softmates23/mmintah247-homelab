@@ -9,6 +9,8 @@ mkdocs serve
 
 Open http://127.0.0.1:8000 to view the site.
 
+changes
+
 ## Build & deploy
 - Local build: `mkdocs build`
 - GitHub Pages: push to `main` with the included workflow enabled in repo Settings → Pages.
