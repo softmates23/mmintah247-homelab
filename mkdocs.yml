@@ -1,0 +1,69 @@
+site_name: MMINTAH247 | Homelab Docs
+site_description: Knowledge base for my homelab
+site_url: https://mmintah247.com
+repo_url: https://github.com/yourname/homelab-docs
+repo_name: homelab-docs
+copyright: © 2025 Martin
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  font:
+    text: Inter
+    code: JetBrains Mono
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.png
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - content.code.copy
+    - content.action.edit
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Runbooks:
+      - Networking: runbooks/networking.md
+      - Kubernetes: runbooks/kubernetes.md
+      - Backups: runbooks/backups.md
+  - How-to Guides:
+      - Proxmox: guides/proxmox.md
+      - TrueNAS: guides/truenas.md
+      - Monitoring (Prometheus + Grafana): guides/monitoring.md
+  - Reference:
+      - Hardware Inventory: reference/hardware.md
+      - Services Matrix: reference/services.md
+      - Glossary: reference/glossary.md
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.critic
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.keys
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourname
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/yourhandle

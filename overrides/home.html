@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+  <section class="hero">
+    <div class="hero__inner">
+      <h1>Homelab documentation that simply works</h1>
+      <p class="tagline">Write your procedures in Markdown and publish a beautiful site in minutes.</p>
+      <div class="hero__cta">
+        <a class="md-button md-button--primary" href="runbooks/networking/">Get started</a>
+        <a class="md-button" href="guides/proxmox/">Learn more</a>
+      </div>
+    </div>
+    <div class="hero__art" role="img" aria-label="Futuristic outpost illustration"></div>
+  </section>
+  <main class="md-main" data-md-component="main">
+    <div class="md-main__inner md-grid">
+      <div class="md-content" data-md-component="content">
+        <article class="md-content__inner md-typeset">
+          {{ page.content }}
+        </article>
+      </div>
+    </div>
+  </main>
+{% endblock %}
